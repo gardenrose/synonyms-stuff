@@ -22,13 +22,13 @@ const connectDB = async () => {
 connectDB();
 
 const app = express();
-
 app.use(cors(
-  {
-    origin: ["https://synonyms-stuff-client.vercel.app/"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }))
+    {
+        origin: ["https://synonyms-stuff-client.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 app.use(logger("dev"));
 app.use(express.json());

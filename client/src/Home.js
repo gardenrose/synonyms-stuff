@@ -38,7 +38,7 @@ function Home() {
     const lowerCaseInput = input.toLowerCase();
     if (lowerCaseInput !== "") {
       setMainWord(lowerCaseInput);
-      fetch(`https://synonyms-stuff-backend.onrender.com/api/getSynonyms?name=${lowerCaseInput}`)
+      fetch(`/api/getSynonyms?name=${lowerCaseInput}`)
         .then((response) => response.json())
         .then((data) => {
           const filteredWordGroups = data.matchedWords.filter(

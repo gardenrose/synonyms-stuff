@@ -39,14 +39,7 @@ app.use(cors());
 //app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("/", async (req, res, next) => {
-  try {
-    const data = await Word.find();
-    console.log("Logging fetched data:", data);
-    res.status(200).json({ title: "Express", words: data });
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    res.status(500).send("Error fetching data");
-  }
+  res.json("Hello");
 });
 
 

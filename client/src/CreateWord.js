@@ -83,7 +83,7 @@ function CreateWord() {
     // navigate back to home page. 
     if (allData.mainWord.trim()) {
       try {
-        const response = await fetch('synonyms-stuff-api.vercel.app/api/insertWord', {
+        const response = await fetch('https://synonyms-stuff-api.vercel.app/api/insertWord', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

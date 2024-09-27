@@ -28,7 +28,7 @@ app.use(cors(
     origin: "https://synonyms-stuff-client.vercel.app/",
     methods: ["POST", "GET"],
     credentials: true
-  }
+  }))
 
 app.use(logger("dev"));
 app.use(express.json());

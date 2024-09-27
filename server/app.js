@@ -42,12 +42,13 @@ app.get("/", async (req, res, next) => {
   try {
     const data = await Word.find();
     console.log("Logging fetched data:", data);
-    res.render("index", { title: "Express", words: data });
+    res.status(200).json({ title: "Express", words: data });
   } catch (error) {
     console.error("Error fetching data:", error);
     res.status(500).send("Error fetching data");
   }
 });
+
 
 const usersRouter = require("./routes/users");
 const serverRouter = require("./routes/server");

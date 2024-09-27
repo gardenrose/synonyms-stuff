@@ -7,6 +7,15 @@ const logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+const app = express();
+app.use(cors(
+    {
+        origin: ["https://synonyms-stuff-client.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
+
 const connectDB = async () => {
   try {
     await mongoose.connect("mongodb+srv://andelarados1b:PvidSRGeyu7TMTje@cluster0.kbpqj.mongodb.net/synonyms?retryWrites=true&w=majority&appName=Cluster0", {
@@ -20,15 +29,6 @@ const connectDB = async () => {
 };
 
 connectDB();
-
-const app = express();
-app.use(cors(
-    {
-        origin: ["https://synonyms-stuff-client.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
 
 app.use(logger("dev"));
 app.use(express.json());

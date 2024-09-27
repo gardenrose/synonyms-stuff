@@ -8,13 +8,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 const app = express();
-app.use(cors(
-    {
-        origin: ["https://synonyms-stuff-client.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors());
 
 const connectDB = async () => {
   try {

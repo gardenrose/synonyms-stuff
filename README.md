@@ -14,4 +14,4 @@ The `word` model also has unique _id tag as primary key, so that the name is not
 ## Installation steps and running locally
 - git clone https://github.com/gardenrose/synonyms-stuff.git
 - navigate to project folder and client folder and run `npm install`
-- do the same for server folder and run `npm start` in it. (no need to run client and server separately. the app runs on port 9000)
+- do the same for server folder and run `npm start` in it. (no need to run client and server separately because of serving a static build. the app runs on port 9000)

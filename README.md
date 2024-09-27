@@ -12,7 +12,5 @@ This is a MERN (MongoDB + Express.js + React.js + Node.js) app for synonyms. The
 })`<br>
 The `word` model also has unique _id tag as primary key, so that the name is not unique and the word_group helps connect all synonyms withuot having to connect them through foreign keys. The `groupID` stores a single element with highest group id and it updates whenever a new group of synonyms is added. It's made in order to avoid constantly querying the highest group id from `word` table.
 
-## Installation steps and running locally
-- git clone https://github.com/gardenrose/synonyms-stuff.git
-- navigate to project folder and client folder and run `npm install`
-- do the same for server folder and run `npm start` in it. (no need to run client and server separately because of serving a static build. the app runs on port 9000)
+## Deploy link
+- https://synonyms-stuff-backend.onrender.com/

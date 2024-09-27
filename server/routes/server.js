@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Word = require("../models/word");
-const GroupID = require("../models/groupid");
+const GroupID = require("../models/groupID");
 
 /* 
     This route was not used, it only serves for checking what words are currently in db.

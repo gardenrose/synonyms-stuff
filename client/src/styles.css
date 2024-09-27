@@ -1,0 +1,140 @@
+.searchwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.searchbar,
+.insertword {
+    border: 2px solid grey;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 320px) {
+    .searchbar {
+        width: 50%;
+    }
+}
+
+.searchbtn {
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.searchbtn:hover,
+.managebtn:hover {
+    background-color: lightcyan;
+    border: 2px solid turquoise;
+}
+
+.mainword,
+.synonym,
+.addsynonym,
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.synonym {
+    cursor: pointer;
+    color: darkred;
+    font-size: 20px;
+}
+
+@media (max-width: 320px) {
+    .synonym {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .mainword,
+    .synonym {
+        margin-left: 26px;
+    }
+}
+
+hr {
+    margin-left: 50px;
+    width: 55%;
+}
+
+@media (max-width: 320px) {
+
+    hr,
+    .addsynonym,
+    p {
+        margin-left: 26px;
+        width: 80%;
+    }
+}
+
+.synonym {
+    display: block;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.mainwordwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.managebtn {
+    background-color: transparent;
+    border: 2px solid grey;
+    height: 36px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {
+
+    .managebtn,
+    .searchbar {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.insertwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clickableword {
+    cursor: pointer;
+    color: darkred;
+}
+
+.warning {
+    color: red;
+}
+
+.notification {
+    color: green;
+}
+
+.synonyminput {
+    margin: 10px;
+    flex: 1;
+}

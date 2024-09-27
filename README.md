@@ -1,4 +1,5 @@
 # synonyms-stuff
+## Description
 This is a MERN (MongoDB + Express.js + React.js + Node.js) app for synonyms. The user searches for a word or expression and gets the list of its synonyms. If the word isn't in the db, or doesn't have any synonym, it is possible to create them. The search works as "=" (exact match) and not "contains". If there are words that are the same in written form, but can mean different things, they will be grouped with different synonyms and, when searching for words like those, all results will show, with their synonyms (up to 4) in parenthesis. Then the user can choose which one to look up (example of a word like that is bow, it can mean to bend forward and a weapon). When entering new words, the app will make sure to not save duplicates to db as well as empty strings. In addition, when attempting to insert a group of synonyms, the app will check all other groups and if only 1 word matches, the group can be inserted, but if 2 or more words match it won't be inserted to prevent overlapping groups.
 
 ## List of models
